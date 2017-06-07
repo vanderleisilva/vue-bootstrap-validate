@@ -34,3 +34,33 @@ fieldValidation.locale(ptBR, 'pt_BR')
 Vue.component('field-validation', fieldValidation);
 </script>
 ```
+
+# Props
+
+`v-validate`
+
+The validation criteria. For a complete list of a available rules: [available-rules](http://vee-validate.logaretm.com/rules.html#available-rules)
+
+`custom-errors`
+
+An **optional** object, where each property represents an form item, containing possible errors from the back-end
+
+`label`
+
+The label for the form element
+
+`field`
+
+The field name which will be stored on the errors property from the container component
+
+`name`
+
+It needs to be the same as the **field** property
+
+`data-vv-as`
+
+An **optional** label for the validation message 
+
+`css-class`
+
+Additional classes to be add to the component
