@@ -35,6 +35,14 @@ Vue.component('field-validation', fieldValidation);
 </script>
 ```
 
+```javascript
+this.$validator.validateAll().then(()=>{
+	//ok
+}).catch((e) => {
+	//problems
+});
+```
+
 # Props
 
 `v-validate`
@@ -64,3 +72,7 @@ An **optional** label for the validation message
 `css-class`
 
 Additional classes to be add to the component
+
+`errors`
+
+A read only property which list the errors encountered on the form
