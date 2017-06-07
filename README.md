@@ -20,14 +20,16 @@ $ npm install vue-bootstrap-validate --save
 # Usage
 ``` html
 <field-validation :status="errors" :custom-errors="apiErrors" label="Input label" field="data">
-	<input v-validate="'required'" class="form-control" v-model="databind" name="data" data-vv-as="data-to-show" type="text" />
+  <input v-validate="'required'" class="form-control" v-model="databind" name="data" data-vv-as="data-to-show" type="text" />
 </field-validation> 
 
 <script>
 import fieldValidation from 'vue-bootstrap-validate'
 
+// needed if you're using a language different than English
 import ptBR from 'vee-validate/dist/locale/pt_BR'
 fieldValidation.locale(ptBR, 'pt_BR')
+// -------
 
 Vue.component('field-validation', fieldValidation);
 </script>
