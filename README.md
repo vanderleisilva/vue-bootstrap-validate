@@ -37,9 +37,9 @@ Vue.component('field-validation', fieldValidation);
 
 ```javascript
 this.$validator.validateAll().then(()=>{
-	//ok
+    //ok
 }).catch((e) => {
-	//problems
+    //problems
 });
 ```
 
@@ -51,7 +51,7 @@ The validation criteria. For a complete list of a available rules: [available-ru
 
 `custom-errors`
 
-An **optional** object, where each property represents an form item, containing possible errors from the back-end
+An **optional** object, where each property represents a form item, containing possible errors from the back-end
 
 `label`
 
