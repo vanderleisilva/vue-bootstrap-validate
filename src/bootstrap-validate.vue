@@ -1,7 +1,7 @@
 <template>
   <div class="form-group has-feedback" :class="[problems ? 'has-error' : '', cssClass]">
       <label v-show="label" class="control-label" :for="field">{{label}}</label>
-      <slot />      
+      <slot></slot>      
       <span v-show="problems && label" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
       <span v-show="problems" class="help-block">
         <p v-for="problem in problems">

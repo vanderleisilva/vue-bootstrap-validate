@@ -1,6 +1,6 @@
 {
   "name": "vue-bootstrap-validate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A bootstrap integrated validation component for vue.js",
   "main": "./dist/vue-bootstrap-validate.min.js",
   "files": [
