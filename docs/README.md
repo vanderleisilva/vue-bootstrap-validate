@@ -17,11 +17,7 @@ The component adds a bootstrap style to the validation form elements status. The
 $ npm install vue-bootstrap-validate --save
 ```
 
-# Documentation
-Full documentation [click here](https://vanderleisilva.github.io/vue-bootstrap-validate/)
-
 # Usage
-
 ``` html
 <field-validation :status="errors" :custom-errors="apiErrors" label="Input label" field="data">
   <input v-validate="'required'" class="form-control" v-model="databind" name="data" data-vv-as="data-to-show" type="text" />

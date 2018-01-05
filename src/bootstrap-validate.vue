@@ -42,8 +42,7 @@ export default {
     customErrors: Object
   },
   locale(lang, label){   
-    Validator.addLocale(lang);
-    Validator.setLocale(label);
+    Validator.localize(label, lang);
   }
 } 
 </script>
