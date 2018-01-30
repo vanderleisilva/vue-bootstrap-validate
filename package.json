@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/vanderleisilva/vue-bootstrap-validate#readme",
   "dependencies": {
-    "vee-validate": "2.0.0",
+    "vee-validate": "ˆ2.0.0",
     "bootstrap": "^3.3.7"
   },
   "devDependencies": {
