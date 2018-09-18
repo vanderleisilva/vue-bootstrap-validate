@@ -23,7 +23,8 @@ Full documentation [click here](https://vanderleisilva.github.io/vue-bootstrap-v
 # Usage
 
 ``` html
-<field-validation :status="errors" :custom-errors="apiErrors" label="Input label" field="data">
+<field-validation :status="errors" :custom-errors="apiErrors" label="Input label"
+  field="data" :show-icon="true">
   <input v-validate="'required'" class="form-control" v-model="databind" name="data" data-vv-as="data-to-show" type="text" />
 </field-validation> 
 
@@ -80,3 +81,7 @@ Additional classes to be add to the component
 `errors`
 
 A read only property which list the errors encountered on the form
+
+`show-icon`
+
+An **optional** props to show an 'x' icon that increases the error visibility
