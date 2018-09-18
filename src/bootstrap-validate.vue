@@ -2,9 +2,9 @@
   <div class="form-group has-feedback" :class="[problems ? 'has-error' : '', cssClass]">
       <label v-show="label" class="control-label" :for="field">{{label}}</label>
       <slot></slot>      
-      <span v-show="problems && label" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+      <span v-show="problems && label && showIcon" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
       <span v-show="problems" class="help-block">
-        <p v-for="problem in problems">
+        <p v-for="problem in problems" :key="problems.indexOf(problem)">
           <i v-show="problems.length > 1" class="fa fa-exclamation" aria-hidden="true"></i>
           {{ problem }}
         </p>
@@ -39,7 +39,11 @@ export default {
     field: String,
     label: String,
     cssClass: String,
-    customErrors: Object
+    customErrors: Object,
+    showIcon: {
+      type: Boolean,
+      default: true
+    }
   },
   locale(lang, label){   
     Validator.localize(label, lang);
